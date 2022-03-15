@@ -1,3 +1,4 @@
+//go:build linux || darwin
 // +build linux darwin
 
 // Extract the information on running processes from gopsutil
