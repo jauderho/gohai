@@ -8,7 +8,7 @@ func (self *Cpu) Name() string {
 	return name
 }
 
-func (self *Cpu) Collect() (result interface{}, err error) {
+func (self *Cpu) Collect() (result any, err error) {
 	result, err = getCpuInfo()
 	return
 }

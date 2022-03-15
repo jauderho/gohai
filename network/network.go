@@ -3,8 +3,8 @@
 
 package network
 
-func getNetworkInfo() (networkInfo map[string]interface{}, err error) {
-	networkInfo = make(map[string]interface{})
+func getNetworkInfo() (networkInfo map[string]any, err error) {
+	networkInfo = make(map[string]any)
 
 	macaddress, err := macAddress()
 	if err != nil {

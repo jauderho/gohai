@@ -84,7 +84,7 @@ func getMountPoints(vol string) []string {
 	return convert_windows_string_list(buf)
 
 }
-func getFileSystemInfo() (interface{}, error) {
+func getFileSystemInfo() (any, error) {
 	var mod = syscall.NewLazyDLL("kernel32.dll")
 	var findFirst = mod.NewProc("FindFirstVolumeW")
 	var findNext = mod.NewProc("FindNextVolumeW")
@@ -96,7 +96,7 @@ func getFileSystemInfo() (interface{}, error) {
 	fh, _, _ := findFirst.Call(uintptr(unsafe.Pointer(&buf[0])),
 		uintptr(sz))
 	var findHandle Handle = Handle(fh)
-	var fileSystemInfo []interface{}
+	var fileSystemInfo []any
 
 	if findHandle != InvalidHandle {
 		defer findClose.Call(fh)
@@ -115,7 +115,7 @@ func getFileSystemInfo() (interface{}, error) {
 			if len(mountpts) > 0 {
 				mountName = mountpts[0]
 			}
-			iface := map[string]interface{}{
+			iface := map[string]any{
 				"name":       outstring,
 				"kb_size":    capacity,
 				"mounted_on": mountName,

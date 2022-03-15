@@ -6,8 +6,8 @@ import (
 	"strings"
 )
 
-func getNetworkInfo() (networkInfo map[string]interface{}, err error) {
-	networkInfo = make(map[string]interface{})
+func getNetworkInfo() (networkInfo map[string]any, err error) {
+	networkInfo = make(map[string]any)
 
 	out, err := exec.Command("ipconfig", "-all").CombinedOutput()
 	if err != nil {
@@ -18,11 +18,11 @@ func getNetworkInfo() (networkInfo map[string]interface{}, err error) {
 	return
 }
 
-func parseIpConfig(out string) (networkInfo map[string]interface{}, err error) {
+func parseIpConfig(out string) (networkInfo map[string]any, err error) {
 	// The hardest part is that we want the 3 addresses to come from the same block
 	// or else, it wouldn't really make sense. Also we assume that only one
 	// interface is seriously enabled and has IPv4 at least
-	networkInfo = make(map[string]interface{})
+	networkInfo = make(map[string]any)
 	var ip, mac, ipv6 string
 
 	lines := strings.Split(string(out), "\n")

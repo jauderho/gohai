@@ -13,7 +13,7 @@ func (self *Network) Name() string {
 	return name
 }
 
-func (self *Network) Collect() (result interface{}, err error) {
+func (self *Network) Collect() (result any, err error) {
 	result, err = getNetworkInfo()
 	if err != nil {
 		return
@@ -21,7 +21,7 @@ func (self *Network) Collect() (result interface{}, err error) {
 
 	interfaces, err := getMultiNetworkInfo()
 	if err == nil && len(interfaces) > 0 {
-		interfaceMap, ok := result.(map[string]interface{})
+		interfaceMap, ok := result.(map[string]any)
 		if !ok {
 			return
 		}
@@ -30,14 +30,14 @@ func (self *Network) Collect() (result interface{}, err error) {
 	return
 }
 
-func getMultiNetworkInfo() (multiNetworkInfo []map[string]interface{}, err error) {
+func getMultiNetworkInfo() (multiNetworkInfo []map[string]any, err error) {
 	ifaces, err := net.Interfaces()
 
 	if err != nil {
 		return multiNetworkInfo, err
 	}
 	for _, iface := range ifaces {
-		_iface := make(map[string]interface{})
+		_iface := make(map[string]any)
 		_ipv4 := []string{}
 		_ipv6 := []string{}
 		if iface.Flags&net.FlagUp == 0 || iface.Flags&net.FlagLoopback != 0 {

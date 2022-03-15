@@ -11,8 +11,8 @@ import (
 )
 
 // GetArchInfo() returns basic host architecture information
-func GetArchInfo() (archInfo map[string]interface{}, err error) {
-	archInfo = make(map[string]interface{})
+func GetArchInfo() (archInfo map[string]any, err error) {
+	archInfo = make(map[string]any)
 
 	out, err := exec.Command("uname", unameOptions...).Output()
 	if err != nil {

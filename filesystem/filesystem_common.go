@@ -8,7 +8,7 @@ func (self *FileSystem) Name() string {
 	return name
 }
 
-func (self *FileSystem) Collect() (result interface{}, err error) {
+func (self *FileSystem) Collect() (result any, err error) {
 	result, err = getFileSystemInfo()
 	return
 }

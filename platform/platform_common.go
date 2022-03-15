@@ -21,12 +21,12 @@ func (self *Platform) Name() string {
 	return name
 }
 
-func (self *Platform) Collect() (result interface{}, err error) {
+func (self *Platform) Collect() (result any, err error) {
 	result, err = getPlatformInfo()
 	return
 }
 
-func getPlatformInfo() (platformInfo map[string]interface{}, err error) {
+func getPlatformInfo() (platformInfo map[string]any, err error) {
 
 	// collect each portion, and allow the parts that succeed (even if some
 	// parts fail.)  For this check, it does have the (small) liability
@@ -37,7 +37,7 @@ func getPlatformInfo() (platformInfo map[string]interface{}, err error) {
 	// to the return value, and the error stored.
 	platformInfo, err = GetArchInfo()
 	if platformInfo == nil {
-		platformInfo = make(map[string]interface{})
+		platformInfo = make(map[string]any)
 	}
 
 	platformInfo["goV"] = strings.Replace(runtime.Version(), "go", "", -1)

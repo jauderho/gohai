@@ -18,7 +18,7 @@ func (self *Processes) Name() string {
 	return name
 }
 
-func (self *Processes) Collect() (result interface{}, err error) {
+func (self *Processes) Collect() (result any, err error) {
 	// even if getProcesses returns nil, simply assigning to result
 	// will have a non-nil return, because it has a valid inner
 	// type (more info here: https://golang.org/doc/faq#nil_error )

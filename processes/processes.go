@@ -10,10 +10,10 @@ import (
 	"github.com/DataDog/gohai/processes/gops"
 )
 
-type ProcessField [7]interface{}
+type ProcessField [7]any
 
 // Return a JSON payload that's compatible with the legacy "processes" resource check
-func getProcesses(limit int) ([]interface{}, error) {
+func getProcesses(limit int) ([]any, error) {
 	processGroups, err := gops.TopRSSProcessGroups(limit)
 	if err != nil {
 		return nil, err
@@ -34,5 +34,5 @@ func getProcesses(limit int) ([]interface{}, error) {
 		snapData[i] = processField
 	}
 
-	return []interface{}{time.Now().Unix(), snapData}, nil
+	return []any{time.Now().Unix(), snapData}, nil
 }

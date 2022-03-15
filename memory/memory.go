@@ -8,7 +8,7 @@ func (self *Memory) Name() string {
 	return name
 }
 
-func (self *Memory) Collect() (result interface{}, err error) {
+func (self *Memory) Collect() (result any, err error) {
 	result, err = getMemoryInfo()
 	return
 }

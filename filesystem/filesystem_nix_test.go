@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-func MockSlowGetFileSystemInfo() (interface{}, error) {
+func MockSlowGetFileSystemInfo() (any, error) {
 	/* Run a command that will definitely time out */
 	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
 	defer cancel()

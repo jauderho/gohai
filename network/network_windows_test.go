@@ -19,7 +19,7 @@ func TestWindowsNetworkParser(t *testing.T) {
 	}
 	ip_config_output := string(bin_out)
 
-	expected := map[string]interface{}{
+	expected := map[string]any{
 		"ipaddress":   "10.42.30.215",
 		"macaddress":  "4C-0B-BE-2A-94-46",
 		"ipaddressv6": "fe80::6d56:b5b1:7fe0:b097%3",

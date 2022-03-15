@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-func getFileSystemInfo() (interface{}, error) {
+func getFileSystemInfo() (any, error) {
 
 	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
 	defer cancel()
@@ -30,9 +30,9 @@ func getFileSystemInfo() (interface{}, error) {
 	return nil, fmt.Errorf("df failed to collect filesystem data")
 }
 
-func parseDfOutput(out string) (interface{}, error) {
+func parseDfOutput(out string) (any, error) {
 	lines := strings.Split(out, "\n")
-	var fileSystemInfo = make([]interface{}, len(lines)-2)
+	var fileSystemInfo = make([]any, len(lines)-2)
 	for i, line := range lines[1:] {
 		values := regexp.MustCompile("\\s+").Split(line, expectedLength)
 		if len(values) == expectedLength {

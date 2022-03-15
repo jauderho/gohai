@@ -11,12 +11,12 @@ func (self *Platform) Name() string {
 	return name
 }
 
-func (self *Platform) Collect() (result interface{}, err error) {
+func (self *Platform) Collect() (result any, err error) {
 	result, err = getPlatformInfo()
 	return
 }
 
-func getPlatformInfo() (platformInfo map[string]interface{}, err error) {
+func getPlatformInfo() (platformInfo map[string]any, err error) {
 
 	return
 }
