@@ -1,6 +1,3 @@
-//go:build linux || darwin
-// +build linux darwin
-
 package network
 
 func getNetworkInfo() (networkInfo map[string]any, err error) {
