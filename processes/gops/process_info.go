@@ -12,8 +12,8 @@ import (
 	log "github.com/cihub/seelog"
 
 	// project
-	"github.com/shirou/gopsutil/mem"
-	"github.com/shirou/gopsutil/process"
+	"github.com/shirou/gopsutil/v3/mem"
+	"github.com/shirou/gopsutil/v3/process"
 )
 
 type ProcessInfo struct {

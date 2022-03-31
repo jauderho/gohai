@@ -1,10 +1,11 @@
-module github.com/DataDog/gohai
+module github.com/jauderho/gohai
 
 go 1.18
 
 require (
+	github.com/DataDog/gohai v0.0.0-20220329101230-3b6a804fdd24
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
-	github.com/shirou/gopsutil v3.21.11+incompatible
+	github.com/shirou/gopsutil/v3 v3.22.2
 	github.com/stretchr/testify v1.7.1
 	golang.org/x/sys v0.0.0-20220330033206-e17cdc41300f
 )
@@ -12,7 +13,9 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/lufia/plan9stats v0.0.0-20220326011226-f1430873d8db // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
+	github.com/power-devops/perfstat v0.0.0-20220216144756-c35f1ee13d7c // indirect
 	github.com/tklauser/go-sysconf v0.3.10 // indirect
 	github.com/tklauser/numcpus v0.4.0 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
