@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/DataDog/gohai v0.0.0-20220329101230-3b6a804fdd24
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
-	github.com/shirou/gopsutil/v3 v3.22.2
+	github.com/shirou/gopsutil/v3 v3.22.3
 	github.com/stretchr/testify v1.7.1
 	golang.org/x/sys v0.0.0-20220330033206-e17cdc41300f
 )
