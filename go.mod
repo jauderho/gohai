@@ -3,16 +3,18 @@ module github.com/jauderho/gohai
 go 1.18
 
 require (
-	github.com/DataDog/gohai v0.0.0-20220329101230-3b6a804fdd24
+	github.com/DataDog/gohai v0.0.0-20220412145100-c614f513e87f
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/shirou/gopsutil/v3 v3.22.3
 	github.com/stretchr/testify v1.7.1
-	golang.org/x/sys v0.0.0-20220403205710-6acee93ad0eb
+	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad
 )
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
+	github.com/hashicorp/errwrap v1.1.0 // indirect
+	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/lufia/plan9stats v0.0.0-20220326011226-f1430873d8db // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20220216144756-c35f1ee13d7c // indirect
