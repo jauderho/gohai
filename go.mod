@@ -7,7 +7,7 @@ require (
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/shirou/gopsutil/v3 v3.22.4
 	github.com/stretchr/testify v1.7.1
-	golang.org/x/sys v0.0.0-20220519141025-dcacdad47464
+	golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a
 )
 
 require (
@@ -21,5 +21,5 @@ require (
 	github.com/tklauser/go-sysconf v0.3.10 // indirect
 	github.com/tklauser/numcpus v0.5.0 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20220512140231-539c8e751b99 // indirect
+	gopkg.in/yaml.v3 v3.0.0 // indirect
 )
