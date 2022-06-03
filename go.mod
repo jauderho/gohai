@@ -3,7 +3,7 @@ module github.com/jauderho/gohai
 go 1.18
 
 require (
-	github.com/DataDog/gohai v0.0.0-20220602094553-3ad6d4e17039
+	github.com/DataDog/gohai v0.0.0-20220603084236-f7d1bf45ba84
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/shirou/gopsutil/v3 v3.22.5
 	github.com/stretchr/testify v1.7.1

@@ -1,5 +1,5 @@
-github.com/DataDog/gohai v0.0.0-20220602094553-3ad6d4e17039 h1:fhbNFSbV4nX+6II87unB79gef+JpaPHdN0PkomZjSU0=
-github.com/DataDog/gohai v0.0.0-20220602094553-3ad6d4e17039/go.mod h1:rwUdBVqBxO9kAvJxe9OGM/gmbvkU8vr4Zo8Jy/0FOhI=
+github.com/DataDog/gohai v0.0.0-20220603084236-f7d1bf45ba84 h1:d0aY6hM5DVHUq0vM8LUOTAcFo70/yeHkVFCD/ZG3U40=
+github.com/DataDog/gohai v0.0.0-20220603084236-f7d1bf45ba84/go.mod h1:rwUdBVqBxO9kAvJxe9OGM/gmbvkU8vr4Zo8Jy/0FOhI=
 github.com/cihub/seelog v0.0.0-20151216151435-d2c6e5aa9fbf/go.mod h1:9d6lWj8KzO/fd/NrVaLscBKmPigpZpn5YawRPw+e3Yo=
 github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575 h1:kHaBemcxl8o/pQ5VM1c8PVE1PubbNx3mjUr09OqWGCs=
 github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575/go.mod h1:9d6lWj8KzO/fd/NrVaLscBKmPigpZpn5YawRPw+e3Yo=
