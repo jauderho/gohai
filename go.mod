@@ -3,11 +3,11 @@ module github.com/jauderho/gohai
 go 1.18
 
 require (
-	github.com/DataDog/gohai v0.0.0-20220718130825-1776f9beb9cc
+	github.com/DataDog/gohai v0.0.0-20220816132624-9d28642bc5b6
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/shirou/gopsutil/v3 v3.22.7
 	github.com/stretchr/testify v1.8.0
-	golang.org/x/sys v0.0.0-20220731174439-a90be440212d
+	golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab
 )
 
 require (
