@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
-	github.com/shirou/gopsutil/v3 v3.22.8
+	github.com/shirou/gopsutil/v3 v3.22.9
 	github.com/stretchr/testify v1.8.0
 	golang.org/x/sys v0.0.0-20220906165534-d0df966e6959
 )
