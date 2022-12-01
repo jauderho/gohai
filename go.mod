@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
-	github.com/shirou/gopsutil/v3 v3.22.10
+	github.com/shirou/gopsutil/v3 v3.22.11
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/sys v0.2.0
 )
